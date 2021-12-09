@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style_private.css" rel="stylesheet">
+    </link>
+    <title>Debate - Private Room</title>
+    <style>
+    #timer {
+        color: #000;
+        font-family: Arial;
+        font-size: 30px;
+    }
+
+    button {
+        text-decoration: none;
+        color: #fff;
+        background-color: #26a69a;
+        text-align: center;
+        letter-spacing: .5px;
+        transition: .2s ease-out;
+        cursor: pointer;
+        border: none;
+        border-radius: 2px;
+        display: block;
+        height: 36px;
+        line-height: 36px;
+        padding: 0 2rem;
+        text-transform: uppercase;
+        /* vertical-align: middle; */
+        -webkit-tap-highlight-color: transparent;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    }
+
+    button + button {
+        margin-top: 10px;
+    }
+
+    button:focus {
+        outline: 0;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        
+        <!-- View chat messages here here -->
+        <div class="sub-container chat-feed">
+            <div class="chat-header">Debate Room - <span id="private-room-name">Debate Room</span></div><br>
+           
+            <p>*Press the <span class="note">red button</span>to flip for PRO (heads) or CON (tails). Opening statements 1 minute each followed by 2 minutes for rebuttal. Click <a href="../index.html"> here </a> to return to the main page.</p>
+            <div class="chat-box" id="chat-box-msgs"></div>
+        </div>
+    </div>
+
+        <!-- Enter chat messages here -->
+        <div class="sub-container chat-input">
+            <input type="text" class="chat-input-name" id="name-input" placeholder="Nickname" />
+            <input type="text" class="chat-input-msg" id="msg-input" placeholder="Message" />
+            <button id="send-button">Send</button>
+           
+        </div>
+        <div class="coin_flip"> 
+            <div class ="coin-col">
+                <button id="button">Press Here to Start</button>
+            </div>
+            <div class ="coin-col">
+                <object id="coin"></object>
+            </div>
+            <div class ="coin-col">
+                <p class="coin_flip" id="word"></p>
+            </div>
+            
+            <div class="count">
+                <p class="count" id="timer">______</p> 
+                <p class="count" id="timerbutton"></p>
+                </div> 
+         
+        </div>
+    
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+    <script src="app_private.js"></script>
+    <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+	<script language="javascript" src="libraries/p5.dom.js"></script>
+	<script language="javascript" src="libraries/p5.sound.js"></script>
+	<script language="javascript" type="text/javascript" src="sketch.js"></script>
+</body>
+</html>

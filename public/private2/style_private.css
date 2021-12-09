@@ -1,0 +1,89 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('./Assets/flat-earth.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border-color: white; */
+}
+.sub-container {
+    display: flex;
+    width: 50%;
+    max-width: 1200px;
+    border-color: white;
+}
+.chat-input{
+    flex-direction: row;
+    align-items: left;
+}
+.chat-feed{
+    flex-direction: column;  
+    align-items: left;
+    color: white;
+    border-color: white;
+    font-size: 28px;
+}
+input{
+    display: inline;
+    padding: 5px;
+    margin: 10px 10px 0 0;
+    height: 20px;
+}  
+.chat-input-name {
+    width: 20%;
+}
+.chat-input-msg{
+    width: 65%;
+   
+}
+button{
+    height: 35px;
+    margin-top: 10px;
+}
+.chat-header{
+    margin-top: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+.chat-box{
+    border: 2px solid black;
+    height: 300px;
+    padding-left: 5px;
+    overflow: auto;
+}
+#chat-box-msgs.chat-box {
+    border-color: rgb(255, 255, 255);
+   
+}
+p{
+    overflow-wrap: break-word;
+}
+
+.room-input{
+    align-items: center;
+    justify-content: center;
+}
+.project_section {
+    width: 100%
+    margin: 20px 0;
+    background-color: white; 
+    border-radius: 20px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+
+@media (max-width: 800px) {
+    .sub-container {
+        width: 75%;
+    }
+}
