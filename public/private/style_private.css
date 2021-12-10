@@ -55,6 +55,10 @@ body {
     font-size: 30px;
     color: #e71f6c;
 }
+.timernote {
+    font-size: 30px;
+    color: #26a69a;
+}
 
 .container {
     display: flex;
