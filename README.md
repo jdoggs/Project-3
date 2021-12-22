@@ -1,4 +1,4 @@
-CHAT APP WITH PRIVATE ROOMS
+(preliminary draft) CHAT APP WITH PRIVATE ROOMS
 ---------------------------
 ## NOTE on the socket.io update:
 * The videos associated with this code use an older version of socket.io --> v2.0.
